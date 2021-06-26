@@ -135,7 +135,7 @@ int main(){
     hitable *world = random_scene();
 
     // Tracing the rays 
-    for(uint32_t j = 0; j < ny; j++){
+    for(uint32_t j = ny - 1; j < ny; j--){
         for(uint32_t i = 0; i < nx; i++){
 
             vec3 col(0, 0, 0);
